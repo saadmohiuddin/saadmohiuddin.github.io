@@ -1,19 +1,134 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>Saad Mohiuddin</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0f2d;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0d132d;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #66fcf1;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1f2833;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #66fcf1;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #66fcf1;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #66fcf1;
+            border-bottom: 1px solid #66fcf1;
+            padding-bottom: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project, .blog-post {
+            width: 45%;
+            margin: 10px 0;
+        }
+        .project img, .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0d132d;
+        }
+    </style>
 </head>
-
 <body>
-  <script src="js/scripts.js"></script>
-  <h1> Hi!, I am Saad Mohiuddin</h1>
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#travel">Traveling</a>
+        <a href="#blog">Blog Posts</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Saad, a passionate coder and tech enthusiast with a deep interest in particle physics. Welcome to my personal webpage where you can explore my professional journey, coding projects, travel experiences, and personal reflections.</p>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="https://1drv.ms/b/s!AjFvkByE4MfD03McsEc9FYxXxww3?e=1vAt7B"> Download resume</a></p>
+        <iframe src="https://onedrive.live.com/embed?resid=C3C7E0841C906F31%2110739&authkey=!ADBAGP3fsYfydYo&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <img src="project1.jpg" alt="Project 1">
+                <p>Description of project 1 with a link to the GitHub repository.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <img src="project2.jpg" alt="Project 2">
+                <p>Description of project 2 with a link to the GitHub repository.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <section id="travel">
+        <h2>Traveling</h2>
+        <p>Here I share some of my travel experiences and photos from around the world.</p>
+    </section>
+    <section id="blog">
+        <h2>Blog Posts</h2>
+        <div class="container">
+            <div class="blog-post">
+                <h3>Blog Post Title 1</h3>
+                <img src="blog1.jpg" alt="Blog Post 1">
+                <p>Excerpt from blog post 1 with a link to the full post.</p>
+            </div>
+            <div class="blog-post">
+                <h3>Blog Post Title 2</h3>
+                <img src="blog2.jpg" alt="Blog Post 2">
+                <p>Excerpt from blog post 2 with a link to the full post.</p>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
 </body>
 </html>
